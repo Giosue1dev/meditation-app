@@ -13,8 +13,9 @@ This is a project realized for [Start2Impact's](https://www.start2impact.it/) -R
 - References about meditation
 - Intuitive UX/UI
 ## Try
-`javascript`
+```bash
 cd site && npm start
+```
 
 
 ## :keyboard: Languages
