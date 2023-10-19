@@ -14,7 +14,10 @@ This is a project realized for [Start2Impact's](https://www.start2impact.it/) -R
 - Intuitive UX/UI
 ## Try
 ```bash
-cd site && npm start
+cd site 
+```
+```bash
+npm start
 ```
 
 
