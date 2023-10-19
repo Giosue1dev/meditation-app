@@ -13,6 +13,7 @@ This is a project realized for [Start2Impact's](https://www.start2impact.it/) -R
 - References about meditation
 - Intuitive UX/UI
 ## Try
+on the terminal
 ```bash
 cd site 
 ```
