@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .home-button {
+    @apply border-2;
+    @apply border-b-4;
+    @apply rounded-xl;
+    @apply border-slate-900;
+    @apply mt-3;
+    @apply py-1;
+    @apply px-2;
+    @apply text-lg;
+    @apply hover:scale-105;
+    @apply transition-transform;
+    @apply duration-300;
+    @apply ease-in;
+    @apply active:text-slate-700;
+    @apply active:border-slate-700;
+    @apply md:mt-5;
+    @apply md:text-2xl;
+    @apply dark:border-amber-600;
+    @apply dark:active:text-amber-400;
+    @apply dark:active:border-amber-400;
+  }
+
+  .mobile-menu {
+    @apply border-b-2;
+    @apply border-slate-900;
+    @apply my-2;
+    @apply mx-2;
+    @apply px-2;
+    @apply hover:scale-105;
+    @apply active:text-slate-700;
+    @apply active:border-slate-700;
+    @apply md:my-4;
+    @apply md:mx-4;
+    @apply md:px-4;
+    @apply dark:border-amber-600;
+    @apply dark:active:text-amber-400;
+    @apply dark:active:border-amber-400;
+  }
+
+  .desktop-menu {
+    @apply relative;
+    @apply border-b-0;
+    @apply text-xl;
+    @apply after:absolute;
+    @apply after:w-full;
+    @apply after:scale-x-0;
+    @apply after:h-[0.2rem];
+    @apply after:top-7;
+    @apply after:left-0;
+    @apply after:bg-slate-900;
+    @apply after:opacity-90;
+    @apply after:origin-bottom-right;
+    @apply after:transition-transform;
+    @apply after:duration-[300ms];
+    @apply after:ease-out;
+    @apply hover:after:scale-x-100;
+    @apply hover:after:origin-bottom-left;
+    @apply active:text-slate-700;
+    @apply dark:after:bg-amber-600;
+    @apply dark:after:active:bg-amber-400;
+    @apply dark:active:text-amber-400;
+  }
+
+  .buttons-meditation {
+    @apply border-2;
+    @apply border-b-4;
+    @apply border-slate-800;
+    @apply px-2;
+    @apply py-1;
+    @apply rounded-lg;
+    @apply hover:scale-105;
+    @apply transition-transform;
+    @apply duration-300;
+    @apply ease-in;
+    @apply active:text-slate-700;
+    @apply active:border-slate-700;
+    @apply md:px-4;
+    @apply md:py-2;
+    @apply dark:border-amber-600;
+    @apply dark:active:text-amber-400;
+    @apply dark:active:border-amber-400;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer utilities {
+  .autofill-bg-color {
+    @apply autofill:shadow-[inset_0_0_0px_1000px_rgb(250,204,21)];
+    @apply dark:autofill:shadow-[inset_0_0_0px_1000px_rgb(15,23,42)];
+  }
 }
